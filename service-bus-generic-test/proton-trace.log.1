@@ -1,0 +1,196 @@
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[0] : Open{ containerId='72d7367bcb5b4b359993a2dce94cd7c6_G3', hostname='null', maxFrameSize=65536, channelMax=4999, idleTimeOut=120000, outgoingLocales=null, incomingLocales=null, offeredCapabilities=null, desiredCapabilities=null, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[0] : Begin{remoteChannel=0, nextOutgoingId=1, incomingWindow=5000, outgoingWindow=2147483647, handleMax=255, offeredCapabilities=null, desiredCapabilities=null, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[1] : Begin{remoteChannel=1, nextOutgoingId=1, incomingWindow=5000, outgoingWindow=2147483647, handleMax=255, offeredCapabilities=null, desiredCapabilities=null, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[1] : Attach{name='cbs:sender', handle=0, role=RECEIVER, sndSettleMode=SETTLED, rcvSettleMode=FIRST, source=Source{address='null', durable=NONE, expiryPolicy=SESSION_END, timeout=0, dynamic=false, dynamicNodeProperties=null, distributionMode=null, filter=null, defaultOutcome=null, outcomes=null, capabilities=null}, target=Target{address='$cbs', durable=NONE, expiryPolicy=SESSION_END, timeout=0, dynamic=false, dynamicNodeProperties=null, capabilities=null}, unsettled=null, incompleteUnsettled=false, initialDeliveryCount=null, maxMessageSize=18446744073709551615, offeredCapabilities=null, desiredCapabilities=null, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[1] : Flow{nextIncomingId=1, incomingWindow=5000, nextOutgoingId=1, outgoingWindow=2147483647, handle=0, deliveryCount=0, linkCredit=100, available=0, drain=false, echo=false, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[1] : Attach{name='cbs:receiver', handle=1, role=SENDER, sndSettleMode=SETTLED, rcvSettleMode=FIRST, source=Source{address='$cbs', durable=NONE, expiryPolicy=SESSION_END, timeout=0, dynamic=false, dynamicNodeProperties=null, distributionMode=null, filter=null, defaultOutcome=null, outcomes=null, capabilities=null}, target=Target{address='cbs-client-reply-to', durable=NONE, expiryPolicy=SESSION_END, timeout=0, dynamic=false, dynamicNodeProperties=null, capabilities=null}, unsettled=null, incompleteUnsettled=false, initialDeliveryCount=0, maxMessageSize=18446744073709551615, offeredCapabilities=null, desiredCapabilities=null, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[1] : Transfer{handle=1, deliveryId=0, deliveryTag=\x01\x00\x00\x00, messageFormat=0, settled=true, more=false, rcvSettleMode=null, state=null, resume=false, aborted=false, batchable=false}[\x00Ss\xc0\x0f\x0d@@@@@S\x01@@@@@@@\x00St\xc11\x04\xa1\x0bstatus-codeq\x00\x00\x00\xca\xa1\x12status-description\xa1\x08Accepted] 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[0] : Attach{name='q001q001', handle=0, role=RECEIVER, sndSettleMode=UNSETTLED, rcvSettleMode=FIRST, source=Source{address='null', durable=NONE, expiryPolicy=SESSION_END, timeout=0, dynamic=false, dynamicNodeProperties=null, distributionMode=null, filter=null, defaultOutcome=null, outcomes=null, capabilities=null}, target=Target{address='q001', durable=NONE, expiryPolicy=SESSION_END, timeout=0, dynamic=false, dynamicNodeProperties=null, capabilities=null}, unsettled=null, incompleteUnsettled=false, initialDeliveryCount=null, maxMessageSize=262144, offeredCapabilities=null, desiredCapabilities=null, properties={com.microsoft:timeout=58980, client-id=MF_d21666_1644561760318}} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[0] : Flow{nextIncomingId=1, incomingWindow=5000, nextOutgoingId=1, outgoingWindow=2147483647, handle=0, deliveryCount=0, linkCredit=1000, available=0, drain=false, echo=false, properties=null} 
+[2022-02-11 03:42:41 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=0, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:41 PM] com.eg.az.servicebus.samples INFO: main 1 
+[2022-02-11 03:42:44 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=1, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:44 PM] com.eg.az.servicebus.samples INFO: main 2 
+[2022-02-11 03:42:47 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=2, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:47 PM] com.eg.az.servicebus.samples INFO: main 3 
+[2022-02-11 03:42:50 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=3, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:50 PM] com.eg.az.servicebus.samples INFO: main 4 
+[2022-02-11 03:42:53 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=4, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:53 PM] com.eg.az.servicebus.samples INFO: main 5 
+[2022-02-11 03:42:56 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=5, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:56 PM] com.eg.az.servicebus.samples INFO: main 6 
+[2022-02-11 03:42:59 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=6, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:42:59 PM] com.eg.az.servicebus.samples INFO: main 7 
+[2022-02-11 03:43:02 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=7, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:02 PM] com.eg.az.servicebus.samples INFO: main 8 
+[2022-02-11 03:43:05 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=8, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:05 PM] com.eg.az.servicebus.samples INFO: main 9 
+[2022-02-11 03:43:08 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=9, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:08 PM] com.eg.az.servicebus.samples INFO: main 10 
+[2022-02-11 03:43:11 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=10, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:11 PM] com.eg.az.servicebus.samples INFO: main 11 
+[2022-02-11 03:43:15 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=11, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:15 PM] com.eg.az.servicebus.samples INFO: main 12 
+[2022-02-11 03:43:18 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=12, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:18 PM] com.eg.az.servicebus.samples INFO: main 13 
+[2022-02-11 03:43:21 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=13, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:21 PM] com.eg.az.servicebus.samples INFO: main 14 
+[2022-02-11 03:43:24 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=14, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:24 PM] com.eg.az.servicebus.samples INFO: main 15 
+[2022-02-11 03:43:27 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=15, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:27 PM] com.eg.az.servicebus.samples INFO: main 16 
+[2022-02-11 03:43:30 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=16, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:30 PM] com.eg.az.servicebus.samples INFO: main 17 
+[2022-02-11 03:43:33 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=17, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:33 PM] com.eg.az.servicebus.samples INFO: main 18 
+[2022-02-11 03:43:36 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=18, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:36 PM] com.eg.az.servicebus.samples INFO: main 19 
+[2022-02-11 03:43:39 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=19, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:39 PM] com.eg.az.servicebus.samples INFO: main 20 
+[2022-02-11 03:43:42 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=20, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:42 PM] com.eg.az.servicebus.samples INFO: main 21 
+[2022-02-11 03:43:45 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=21, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:45 PM] com.eg.az.servicebus.samples INFO: main 22 
+[2022-02-11 03:43:48 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=22, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:48 PM] com.eg.az.servicebus.samples INFO: main 23 
+[2022-02-11 03:43:51 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=23, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:51 PM] com.eg.az.servicebus.samples INFO: main 24 
+[2022-02-11 03:43:54 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=24, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:54 PM] com.eg.az.servicebus.samples INFO: main 25 
+[2022-02-11 03:43:57 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=25, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:43:57 PM] com.eg.az.servicebus.samples INFO: main 26 
+[2022-02-11 03:44:00 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=26, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:00 PM] com.eg.az.servicebus.samples INFO: main 27 
+[2022-02-11 03:44:03 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=27, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:03 PM] com.eg.az.servicebus.samples INFO: main 28 
+[2022-02-11 03:44:06 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=28, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:06 PM] com.eg.az.servicebus.samples INFO: main 29 
+[2022-02-11 03:44:10 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=29, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:10 PM] com.eg.az.servicebus.samples INFO: main 30 
+[2022-02-11 03:44:13 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=30, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:13 PM] com.eg.az.servicebus.samples INFO: main 31 
+[2022-02-11 03:44:16 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=31, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:16 PM] com.eg.az.servicebus.samples INFO: main 32 
+[2022-02-11 03:44:19 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=32, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:19 PM] com.eg.az.servicebus.samples INFO: main 33 
+[2022-02-11 03:44:22 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=33, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:22 PM] com.eg.az.servicebus.samples INFO: main 34 
+[2022-02-11 03:44:25 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=34, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:25 PM] com.eg.az.servicebus.samples INFO: main 35 
+[2022-02-11 03:44:28 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=35, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:28 PM] com.eg.az.servicebus.samples INFO: main 36 
+[2022-02-11 03:44:31 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=36, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:31 PM] com.eg.az.servicebus.samples INFO: main 37 
+[2022-02-11 03:44:34 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=37, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:34 PM] com.eg.az.servicebus.samples INFO: main 38 
+[2022-02-11 03:44:37 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=38, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:37 PM] com.eg.az.servicebus.samples INFO: main 39 
+[2022-02-11 03:44:40 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=39, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:40 PM] com.eg.az.servicebus.samples INFO: main 40 
+[2022-02-11 03:44:43 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=40, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:43 PM] com.eg.az.servicebus.samples INFO: main 41 
+[2022-02-11 03:44:46 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=41, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:46 PM] com.eg.az.servicebus.samples INFO: main 42 
+[2022-02-11 03:44:49 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=42, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:49 PM] com.eg.az.servicebus.samples INFO: main 43 
+[2022-02-11 03:44:52 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=43, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:52 PM] com.eg.az.servicebus.samples INFO: main 44 
+[2022-02-11 03:44:55 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=44, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:55 PM] com.eg.az.servicebus.samples INFO: main 45 
+[2022-02-11 03:44:58 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=45, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:44:58 PM] com.eg.az.servicebus.samples INFO: main 46 
+[2022-02-11 03:45:01 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=46, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:01 PM] com.eg.az.servicebus.samples INFO: main 47 
+[2022-02-11 03:45:04 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=47, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:04 PM] com.eg.az.servicebus.samples INFO: main 48 
+[2022-02-11 03:45:07 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=48, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:07 PM] com.eg.az.servicebus.samples INFO: main 49 
+[2022-02-11 03:45:10 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=49, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:10 PM] com.eg.az.servicebus.samples INFO: main 50 
+[2022-02-11 03:45:13 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=50, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:13 PM] com.eg.az.servicebus.samples INFO: main 51 
+[2022-02-11 03:45:16 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=51, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:16 PM] com.eg.az.servicebus.samples INFO: main 52 
+[2022-02-11 03:45:19 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=52, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:19 PM] com.eg.az.servicebus.samples INFO: main 53 
+[2022-02-11 03:45:22 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=53, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:22 PM] com.eg.az.servicebus.samples INFO: main 54 
+[2022-02-11 03:45:25 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=54, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:25 PM] com.eg.az.servicebus.samples INFO: main 55 
+[2022-02-11 03:45:28 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=55, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:28 PM] com.eg.az.servicebus.samples INFO: main 56 
+[2022-02-11 03:45:31 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=56, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:31 PM] com.eg.az.servicebus.samples INFO: main 57 
+[2022-02-11 03:45:35 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=57, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:35 PM] com.eg.az.servicebus.samples INFO: main 58 
+[2022-02-11 03:45:38 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=58, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:38 PM] com.eg.az.servicebus.samples INFO: main 59 
+[2022-02-11 03:45:41 PM] proton.trace FINE: IN: CH[0] : Flow{nextIncomingId=60, incomingWindow=5000, nextOutgoingId=1, outgoingWindow=2147483647, handle=null, deliveryCount=null, linkCredit=null, available=null, drain=false, echo=true, properties=null} 
+[2022-02-11 03:45:41 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=59, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:41 PM] com.eg.az.servicebus.samples INFO: main 60 
+[2022-02-11 03:45:44 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=60, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:44 PM] com.eg.az.servicebus.samples INFO: main 61 
+[2022-02-11 03:45:47 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=61, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:47 PM] com.eg.az.servicebus.samples INFO: main 62 
+[2022-02-11 03:45:50 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=62, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:50 PM] com.eg.az.servicebus.samples INFO: main 63 
+[2022-02-11 03:45:53 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=63, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:53 PM] com.eg.az.servicebus.samples INFO: main 64 
+[2022-02-11 03:45:56 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=64, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:56 PM] com.eg.az.servicebus.samples INFO: main 65 
+[2022-02-11 03:45:59 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=65, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:45:59 PM] com.eg.az.servicebus.samples INFO: main 66 
+[2022-02-11 03:46:02 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=66, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:02 PM] com.eg.az.servicebus.samples INFO: main 67 
+[2022-02-11 03:46:05 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=67, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:05 PM] com.eg.az.servicebus.samples INFO: main 68 
+[2022-02-11 03:46:08 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=68, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:08 PM] com.eg.az.servicebus.samples INFO: main 69 
+[2022-02-11 03:46:12 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=69, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:12 PM] com.eg.az.servicebus.samples INFO: main 70 
+[2022-02-11 03:46:15 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=70, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:15 PM] com.eg.az.servicebus.samples INFO: main 71 
+[2022-02-11 03:46:18 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=71, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:18 PM] com.eg.az.servicebus.samples INFO: main 72 
+[2022-02-11 03:46:21 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=72, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:21 PM] com.eg.az.servicebus.samples INFO: main 73 
+[2022-02-11 03:46:24 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=73, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:24 PM] com.eg.az.servicebus.samples INFO: main 74 
+[2022-02-11 03:46:27 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=74, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:27 PM] com.eg.az.servicebus.samples INFO: main 75 
+[2022-02-11 03:46:30 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=75, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:30 PM] com.eg.az.servicebus.samples INFO: main 76 
+[2022-02-11 03:46:33 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=76, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:33 PM] com.eg.az.servicebus.samples INFO: main 77 
+[2022-02-11 03:46:36 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=77, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:36 PM] com.eg.az.servicebus.samples INFO: main 78 
+[2022-02-11 03:46:39 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=78, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:39 PM] com.eg.az.servicebus.samples INFO: main 79 
+[2022-02-11 03:46:42 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=79, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:42 PM] com.eg.az.servicebus.samples INFO: main 80 
+[2022-02-11 03:46:45 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=80, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:45 PM] com.eg.az.servicebus.samples INFO: main 81 
+[2022-02-11 03:46:48 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=81, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:48 PM] com.eg.az.servicebus.samples INFO: main 82 
+[2022-02-11 03:46:51 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=82, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:51 PM] com.eg.az.servicebus.samples INFO: main 83 
+[2022-02-11 03:46:54 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=83, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:54 PM] com.eg.az.servicebus.samples INFO: main 84 
+[2022-02-11 03:46:57 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=84, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:46:57 PM] com.eg.az.servicebus.samples INFO: main 85 
+[2022-02-11 03:47:00 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=85, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:00 PM] com.eg.az.servicebus.samples INFO: main 86 
+[2022-02-11 03:47:03 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=86, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:03 PM] com.eg.az.servicebus.samples INFO: main 87 
+[2022-02-11 03:47:06 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=87, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:06 PM] com.eg.az.servicebus.samples INFO: main 88 
+[2022-02-11 03:47:09 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=88, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:09 PM] com.eg.az.servicebus.samples INFO: main 89 
+[2022-02-11 03:47:12 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=89, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:12 PM] com.eg.az.servicebus.samples INFO: main 90 
+[2022-02-11 03:47:16 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=90, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:16 PM] com.eg.az.servicebus.samples INFO: main 91 
+[2022-02-11 03:47:19 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=91, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:19 PM] com.eg.az.servicebus.samples INFO: main 92 
+[2022-02-11 03:47:22 PM] proton.trace FINE: IN: CH[0] : Disposition{role=RECEIVER, first=92, last=null, settled=true, state=Accepted{}, batchable=false} 
+[2022-02-11 03:47:22 PM] com.eg.az.servicebus.samples INFO: main 93 

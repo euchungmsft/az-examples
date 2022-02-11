@@ -1,0 +1,4 @@
+spring:
+  jms:
+    servicebus:
+      connection-string: Endpoint=sb://sbs-krc-001.servicebus.windows.net/;SharedAccessKeyName=tetster01;SharedAccessKey=E0pzQVX08fCo3mRBvRJiz8xmGzkUbeXxOAkzyv7ycx0=;EntityPath=q001
