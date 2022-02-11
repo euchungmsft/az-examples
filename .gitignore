@@ -1,6 +1,13 @@
 memo*.txt
 *.sh
 
+log/
+tmp/
+ext/
+*log
+*.log*
+*.lck
+
 # Ignore Gradle project-specific cache directory
 .gradle
 
