@@ -1532,3 +1532,7 @@
 [2022-02-11 03:48:30 PM] proton.trace FINE: IN: CH[0] : Flow{nextIncomingId=1, incomingWindow=5000, nextOutgoingId=101, outgoingWindow=2147483547, handle=null, deliveryCount=null, linkCredit=null, available=null, drain=false, echo=true, properties=null} 
 [2022-02-11 03:48:56 PM] proton.trace FINE: IN: CH[0] : Empty Frame 
 [2022-02-11 03:49:23 PM] proton.trace FINE: IN: CH[0] : Empty Frame 
+[2022-02-11 03:49:49 PM] proton.trace FINE: IN: CH[0] : Empty Frame 
+[2022-02-11 03:50:15 PM] proton.trace FINE: IN: CH[0] : Empty Frame 
+[2022-02-11 03:50:42 PM] proton.trace FINE: IN: CH[0] : Empty Frame 
+[2022-02-11 03:51:08 PM] proton.trace FINE: IN: CH[0] : Empty Frame 
